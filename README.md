@@ -1,8 +1,10 @@
 
 
-_____________________________________________________________________
+# Welcome
 
-## My Portfolio
-Thank Alok Prateek ((http://alokprateek.in) for sharing the site template.
-I created my own Portfolio based on the template. Thanks.
+Welcome to my webpage.
 
+The webpage can be loaded locally by moving into the directory and command:
+
+
+python3 -m http.server 8000
