@@ -1,7 +1,7 @@
 /*
 =====================================================================
 *   Porto v4.3 Base Stylesheet
-*   Alok(oxyenyos@gmail.com)
+*   
 *   07-05-2018
 =====================================================================
 
@@ -58,7 +58,7 @@ l.  Social Handles
 /* Basic */
 
 	body {
-		background: #fff;
+		background: #000000;
 		-webkit-font-smoothing: antialiased ;
 		-moz-osx-font-smoothing: grayscale ;
 		text-align:justify;
@@ -1112,7 +1112,7 @@ l.  Social Handles
 /* Wrapper */
 
 	#wrapper {
-		background: #fff;
+		background: #ffffff;
 		/*padding-right: 15em;*/
 	}
 
