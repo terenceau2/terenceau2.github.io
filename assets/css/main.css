@@ -58,7 +58,7 @@ l.  Social Handles
 /* Basic */
 
 	body {
-		background: #000000;
+		background: #FFFFFF;
 		-webkit-font-smoothing: antialiased ;
 		-moz-osx-font-smoothing: grayscale ;
 		text-align:justify;
@@ -484,8 +484,28 @@ l.  Social Handles
 		text-decoration: none;
 		border-bottom: none;
 		position: relative;
+
+
+		/* Added for scaling down. The button is the box, the icon is the image inside the button*/
+
+		display: inline-flex; /* Use flexbox for centering */
+		align-items: center;  /* Vertical centering */
+		justify-content: center; /* Horizontal centering */
+		width: 40px; /* Button width */
+		height: 40px; /* Button height */
+		border-radius: 50%; /* Circular button */
+		background-color: #f0f0f0; /* Light button background */
+		color: #333; /* Default icon color */
+		font-size: 18px; /* Size of the Font Awesome icon */
+		transition: all 0.2s ease-in-out; /* Smooth hover */
 		
 	}
+
+	.icon:hover {
+		background-color: #a0a0a0; /* Slightly darker background on hover */
+		color: #000; /* Darker icon color on hover */
+	}
+
     .icon span {
 			cursor: pointer;
 		}
@@ -499,8 +519,8 @@ l.  Social Handles
 			text-transform: none !important;
 		}
 
-		.icon > .label {
-			display: none;
+		.icon > .label {    /* this specifies the behaviour of the label section under icon section. display: none means the text will not be shown */
+			display: none; 
 		}
 
 /* Image */
@@ -512,9 +532,18 @@ l.  Social Handles
 		position: relative;
 	}
 
+
 		.image img {
 			border-radius: 5px;
 			display: block;
+		}
+
+		img.hover-effect {
+			transition: transform 0.3s ease-in-out; /* Ensure the transition is defined */
+		}
+		
+		img.hover-effect:hover {
+			transform: scale(1.05); /* Add the magnifying effect */
 		}
 
 		.image.left {
@@ -1101,7 +1130,9 @@ l.  Social Handles
 
 						#header > nav ul li a.active {
 							background: #fff;
-							color:  black !important;
+							/* color:  black !important; */
+							color:  #424243 !important;
+
 							font-size: larger;
 						}
 
